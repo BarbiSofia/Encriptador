@@ -1,0 +1,76 @@
+body {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background:  #EDE2F0;
+    font-family: 'PT Sans', sans-serif;
+    color: #7E6687;
+
+}
+
+.ingresar-texto {
+    width: 577px;
+    height: 300px;
+    top: 0;
+    left: 240px;
+    background: #E7DEEA;
+    border: 1px solid #BAACBF;
+    resize: none;
+    font-size: 20px;
+    
+}
+
+.letras {
+    width: 205px;
+    height: 18px;
+    left: 24px;
+    opacity: 80%;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.mensaje-encriptado {
+   width: 577px;
+   height: 300px;
+   top: 0;
+   left: 700px;
+   background: #E7DEEA;
+   border: 1px solid #BAACBF;
+   position: absolute;
+   resize: none;
+
+}
+
+.boton-encriptar, .boton-desencriptar {
+    width: 15%;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #7E6687;
+    background: #C4AECB;
+    border: 1px solid #ABA1AF ;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.boton-copiar {
+    position: absolute;
+    left: 1032px;
+    width: 15%;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #7E6687;
+    background: #C4AECB;
+    border: 1px solid #ABA1AF ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.botones, .section1 {
+    display: inline;
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <main>
+        <section class="section1">
+            <textarea class="ingresar-texto" id="ingresar-texto" placeholder="Ingrese su texto aqui"></textarea>
+            <p class="letras"><img src="../resources/Vector.png"> Solo letras minusculas y sin acentos</p>
+                <div class="botones">
+                    <button class="boton-encriptar" id="boton-encriptar" onclick="encriptador()">Encriptar</button>
+                    <button class="boton-desencriptar" id="boton-desencriptar" onclick="desencriptador()">Desencriptar</button>
+                </div>
+
+        </section>
+
+        <section>
+            <textarea class="mensaje-encriptado" id="mensaje-encriptado" readonly="readonly"></textarea>
+            <button class="boton-copiar" id="boton-copiar" onclick="copiar()">Copiar</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="copyright">&copy Copyright Barbara Sofia Rodriguez</p>
+        <p class="challenge">Challenge Encriptador/Desencriptador</p>
+    </footer>
+    
+</body>
+
+<script src="script.js"></script>
+
+</html>
