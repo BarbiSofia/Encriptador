@@ -13,18 +13,28 @@
 <body>
     <main>
         <section class="section1">
-            <textarea class="ingresar-texto" id="ingresar-texto" placeholder="Ingrese su texto aqui"></textarea>
-            <p class="letras"><img src="../resources/Vector.png"> Solo letras minusculas y sin acentos</p>
+                <div>
+                    <img src="../resources/logo.png" alt="logo" class="logo">
+                    <h1>Encriptador de texto</h1>
+                </div>
+                <div class="caja-texto">
+                    <textarea id="ingresar-texto" placeholder="Ingrese su texto aqui"></textarea>
+                    <p class="letras"><img src="../resources/Vector.png"> Solo letras minusculas y sin acentos</p>
+                </div>
                 <div class="botones">
-                    <button class="boton-encriptar" id="boton-encriptar" onclick="encriptador()">Encriptar</button>
-                    <button class="boton-desencriptar" id="boton-desencriptar" onclick="desencriptador()">Desencriptar</button>
+                    <button class="boton-encriptar" onclick="encriptador()">Encriptar</button>
+                    <button class="boton-desencriptar" onclick="desencriptador()">Desencriptar</button>
                 </div>
 
         </section>
 
         <section>
-            <textarea class="mensaje-encriptado" id="mensaje-encriptado" readonly="readonly"></textarea>
-            <button class="boton-copiar" id="boton-copiar" onclick="copiar()">Copiar</button>
+            <div class="caja-texto">
+                <textarea class="mensaje-encriptado" id="mensaje-encriptado" readonly="readonly"></textarea>
+            </div>
+            <div class="boton-copiar">
+                <button id="boton-copiar" onclick="copiar()">Copiar</button>
+            </div>
         </section>
 
     </main>
