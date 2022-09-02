@@ -1,14 +1,20 @@
 body {
     position: relative;
-    width: 1440px;
-    height: 1024px;
     background:  #EDE2F0;
     font-family: 'PT Sans', sans-serif;
     color: #7E6687;
 
 }
 
-.ingresar-texto {
+main {
+    margin: 900px;
+}
+.logo {
+    width:100px ;
+    height:100px ;
+
+}
+.caja-texto {
     width: 577px;
     height: 300px;
     top: 0;
@@ -31,17 +37,6 @@ body {
     line-height: 150%;
 }
 
-.mensaje-encriptado {
-   width: 577px;
-   height: 300px;
-   top: 0;
-   left: 700px;
-   background: #E7DEEA;
-   border: 1px solid #BAACBF;
-   position: absolute;
-   resize: none;
-
-}
 
 .boton-encriptar, .boton-desencriptar {
     width: 15%;
@@ -70,7 +65,7 @@ body {
     cursor: pointer;
 }
 
-.botones, .section1 {
-    display: inline;
-}
+
+
+
 

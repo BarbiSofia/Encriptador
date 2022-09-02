@@ -12,13 +12,15 @@
 
 <body>
     <main>
-        <section class="section1">
+        <div>
+            <img src="../resources/logo.png" alt="logo" class="logo">
+            <h1>Encriptador de texto</h1>
+        </div>
+        
+        <section>
                 <div>
-                    <img src="../resources/logo.png" alt="logo" class="logo">
-                    <h1>Encriptador de texto</h1>
-                </div>
-                <div class="caja-texto">
-                    <textarea id="ingresar-texto" placeholder="Ingrese su texto aqui"></textarea>
+                    <textarea class="caja-texto" id="ingresar-texto" placeholder="Ingrese su texto aqui"></textarea>
+                    <textarea class="caja-texto" id="mensaje-encriptado" readonly="readonly"></textarea>
                     <p class="letras"><img src="../resources/Vector.png"> Solo letras minusculas y sin acentos</p>
                 </div>
                 <div class="botones">
@@ -29,11 +31,11 @@
         </section>
 
         <section>
-            <div class="caja-texto">
-                <textarea class="mensaje-encriptado" id="mensaje-encriptado" readonly="readonly"></textarea>
+            <div>
+                <!--<textarea class="caja-texto" id="mensaje-encriptado" readonly="readonly"></textarea>--> 
             </div>
             <div class="boton-copiar">
-                <button id="boton-copiar" onclick="copiar()">Copiar</button>
+                <button class="boton-copiar" id="boton-copiar" onclick="copiar()">Copiar</button>
             </div>
         </section>
 
