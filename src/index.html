@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     
@@ -12,39 +12,47 @@
 
 <body>
     <main>
-        <div>
+        <div class="content-title">
             <img src="../resources/logo.png" alt="logo" class="logo">
-            <h1>Encriptador de texto</h1>
+            <label type="text">Encriptador de texto</label>
         </div>
-        
-        <section>
+        <div class="content-flex">
+            <section class="content-section">
                 <div>
                     <textarea class="caja-texto" id="ingresar-texto" placeholder="Ingrese su texto aqui"></textarea>
-                    <textarea class="caja-texto" id="mensaje-encriptado" readonly="readonly"></textarea>
                     <p class="letras"><img src="../resources/Vector.png"> Solo letras minusculas y sin acentos</p>
                 </div>
-                <div class="botones">
+                <div class="flex-center">
                     <button class="boton-encriptar" onclick="encriptador()">Encriptar</button>
-                    <button class="boton-desencriptar" onclick="desencriptador()">Desencriptar</button>
+                    <button class="boton-desencriptar margin" onclick="desencriptador()">Desencriptar</button>
+                    
                 </div>
 
-        </section>
+            </section>
 
-        <section>
-            <div>
-                <!--<textarea class="caja-texto" id="mensaje-encriptado" readonly="readonly"></textarea>--> 
-            </div>
-            <div class="boton-copiar">
-                <button class="boton-copiar" id="boton-copiar" onclick="copiar()">Copiar</button>
-            </div>
-        </section>
+            <section class="content-section margin">
+                <div>
+                    <textarea class="caja-texto" id="mensaje-encriptado" readonly="readonly"></textarea>
+                    <p class="letras"></p> <!--tag utilizada para nivelar botones-->
+                </div>
+                
+                <div class="flex-center">
+                    <button class="boton-copiar" id="boton-copiar" onclick="copiar()">Copiar</button>
+                </div>
+                
+            </section>
+        </div>  
+
 
     </main>
-
-    <footer>
-        <p class="copyright">&copy Copyright Barbara Sofia Rodriguez</p>
-        <p class="challenge">Challenge Encriptador/Desencriptador</p>
-    </footer>
+    
+    <div class="footer">
+        <footer>
+            <p class="copyright">&copy Copyright Barbara Sofia Rodriguez</p>
+            <p class="challenge">Challenge Encriptador/Desencriptador</p>
+        </footer>
+    </div>
+   
     
 </body>
 
